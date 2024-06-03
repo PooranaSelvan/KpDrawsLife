@@ -1,0 +1,61 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+/* Work Page [External]*/
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(45deg,#fd923f,
+    #00a19d,#0c87b7,#cb49ff,
+    #ff6666,#f9d923,red,green,yellow,
+    blue,violet,purple,deepskyblue);
+}
+.bdy{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+.works-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    height:350px;
+    width:350px;
+    border-radius: 50% 20% / 10% 40%;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.bck-home-btn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 100%;
+    color:white;
+    border-radius: 16px;
+    background-color:black;
+    font-family: 'Josefin Sans', sans-serif; /*url*/
+    margin-top: 10px;
+    padding:15px 25px;
+    text-decoration:none;
+}
+.bck-home-btn:hover{
+    letter-spacing: 5px;
+    transition: all 1.5s;
+    color:white;
+    border-color:#cb49ff;
+    z-index: 1;
+    background-color: #cb49ff;
+    box-shadow: 0px 0px 20px #cb49ff;
+}

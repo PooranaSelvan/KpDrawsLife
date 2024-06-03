@@ -1,0 +1,254 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Preahvihear&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Kalam:wght@300;400;700&family=Madimi+One&family=Preahvihear&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+body{
+    padding:0;
+    margin:0;
+}
+.whole-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 50px 0px 50px 0px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/order-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Form */
+#contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding:20px;
+}
+.cont-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color:white;
+    letter-spacing: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+hr{
+    display: flex;
+    flex-wrap: wrap;
+    width:450px;
+}
+label{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: "Madimi One", sans-serif; 
+    font-size:larger;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color:white;
+}
+input , textarea{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    border-color: white;
+    gap:20px;
+    width:400px;
+    height:20px;
+    font-size: large;
+    font-weight: 550;
+    font-family: "Teachers", sans-serif;
+    letter-spacing: 2px;
+    padding:10px 15px;
+}
+textarea{
+    height:50px;
+}
+/* Result */
+.result{
+    display: none;
+    color:white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: helvetica;
+    border: 3px solid white;
+    border-radius: 12px;
+    padding:5px 15px;
+}
+
+/* Submit Button */
+.bn5 {
+    padding: 0.6em 2em;
+    display: flex;
+    margin: 15px;
+    border: none;
+    outline: none;
+    color:black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 17.5px;
+}
+.bn5:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    color:white;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+  
+@keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+} 
+.bn5:active:after {
+     background: transparent;
+}  
+.bn5:hover:before {
+    opacity: 1;
+    color:white;
+} 
+.bn5:after {
+    z-index: -1;
+    content: "";
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* Home Button */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.home-btn {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-family: "Madimi One", sans-serif; 
+    width:100px;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 1rem 2rem;
+    border: 0;
+    box-shadow: 0px 0px 40px 0px #6200FF;
+    font-weight: bolder;
+    color: white;
+    border-radius: 0.3rem;
+    background-color:#6200FF;
+    letter-spacing: .2rem;
+} 
+.home-btn:hover {
+    animation: changeBg 0.1ms infinite;
+    -webkit-animation-duration: 5s;
+}  
+@keyframes changeBg {
+    0%,
+       100% {
+     box-shadow: 0px 0px 40px 0px #6200FF;
+    }
+   
+    15% {
+     box-shadow: 0px 0px 40px 0px rgb(0, 218, 218);
+     background-color: rgb(0, 218, 218);
+    }
+   
+    35%{
+        box-shadow: 0px 0px 40px 0px fuchsia;
+        background-color: fuchsia;
+    }
+    55% {
+     box-shadow: 0px 0px 40px 0px mediumorchid;
+     background-color: mediumorchid;
+    }
+   
+    75% {
+     box-shadow: 0px 0px 40px 0px rgb(255, 71, 169);
+     background-color: rgb(255, 71, 169);
+    }
+
+    100%{
+        box-shadow: 0px 0px 40px 0px rgb(0, 183, 255);
+        background-color:rgb(1, 183, 255);
+    }
+}
+
+
+/* Media Queries For Form */
+@media screen and (max-width:670px) {
+    .whole-wrapper{
+        height:130vh;
+    }
+    #contact-form{
+        width:70%;
+    }
+    input , textarea{
+        font-size: smaller;
+        color:black;
+        width:100%
+    }
+    hr{
+        width:200px;
+    }
+    .home-btn{
+        width:50%;
+        flex-direction: column;
+    }
+}

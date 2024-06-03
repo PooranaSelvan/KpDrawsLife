@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Here</title>
+    <link rel="icon" href="./img/profile.jpg"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<link rel="stylesheet" href="./order.css">
+<body>
+    <div class="whole-wrapper">
+        <form id="contact-form" method="POST">
+            <h1 class="cont-title">Order Here</h1>
+            <hr color="black">
+            <input type="hidden" name="access_key" value="5e7b29aa-d1a4-481c-bee7-4e47ebc2631f">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name Here" required>
+            </div>
+
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter Your Age Here" name="age" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email Here" name="email" required>
+            </div>
+
+            <div>
+                <label for="number">Contact Number</label>
+                <input type="number" id="number" name="number" placeholder="Enter Your Contact Number Here" required> 
+            </div>
+
+            <div>
+                <label for="instagram">Instagram </label>
+                <input type="text" id="instagram" placeholder="Enter Your Instagram Id Here" name="instagram">
+            </div>
+
+            <div>
+                <label for="description">Description</label>
+                <textarea type="text" id="description" name="description" placeholder="Description For What You Need" required></textarea>
+            </div>
+            <div class="result" id="result"></div>
+            <button class="bn5">Sumbit</button>
+        </form>
+        <div class="home">
+            <a href="./index.html" class="home-btn">Home</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Library for popup notification-->
+    <script src="./order.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script> <!-- Form Submission Link -->
+</body>
+</html>
