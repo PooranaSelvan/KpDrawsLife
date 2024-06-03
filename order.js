@@ -60,8 +60,8 @@ form.addEventListener('submit', function(e) {
                 //                     We Will Reach You Soon..`;
                 result.innerHTML = Swal.fire({
                     title: "Order Placed!!",
-                    text: "Thank You For Your Order..",
-                    imageUrl: "https://unsplash.it/400/200",
+                    text: "We Will Reach You Soon..!!",
+                    imageUrl: "./img/order.svg",
                     imageWidth: 400,
                     imageHeight: 200,
                     imageAlt: "Custom image"
