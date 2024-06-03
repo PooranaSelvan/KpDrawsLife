@@ -1,35 +1,4 @@
 
-// document.getElementById('contact-form').addEventListener('submit', function (e) {
-//     e.preventDefault();
-//     var data = new FormData(e.target);
-
-//     fetch("https://formspree.io/f/moqgzgwr", {
-//         method: 'POST',
-//         headers: {
-//             'Accept': 'application/json'
-//         },
-//         body: data
-//     }).then(response => {
-//         if (response.ok) {
-//             alert(`Order Placed Successfully!!
-//                     We'll Reach You ASAP..`);
-//         } else {
-//             response.json().then(data => {
-//                 if (Object.hasOwn(data, 'errors')) {
-//                     alert(data["errors"].map(error => error["message"]).join(", "));
-//                 } else {
-//                     alert(`An Unexpected Error Happened Please Connect to Insta: kpa_143`);
-//                 }
-//             });
-//         }
-//     }).catch(error => {
-//         alert(`An Unexpected Error Happened Please Connect to Insta: kpa_143`);
-//     });
-
-//     document.getElementById('contact-form').reset();
-// });
-
-
 const form = document.getElementById('contact-form');
 const result = document.getElementById('result');
 
@@ -56,8 +25,6 @@ form.addEventListener('submit', function(e) {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
-                // result.innerHTML = `Order Placed Successfully!!
-                //                     We Will Reach You Soon..`;
                 result.innerHTML = Swal.fire({
                     title: "Order Placed!!",
                     text: "We Will Reach You Soon..!!",
@@ -81,4 +48,14 @@ form.addEventListener('submit', function(e) {
                 result.style.display = "none";
             }, 5000);
         });
+});
+
+
+// ==========================================================================
+
+// Dev Tools Hidding
+
+document.addEventListener('contextmenu',
+function(event){
+    event.preventDefault();
 });
