@@ -1,46 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Sample Pictues</title>
-    <link rel="icon" href="./img/profile.jpg" />
-    <link rel="stylesheet" href="works.css">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Pictures</title>
+  <link rel="icon" href="./img/profile.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cyan-300">
 
-<body>
-  <div class="bdy">
-      <img class="works-imgs" src="./img/pic1.jpg" alt="SAMPLE PHOTO"/>
+<div class="container mx-auto px-4 py-8">
 
-      <img class="works-imgs" src="./img/pic2.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic3.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic4.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic5.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic6.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic7.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic8.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic9.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic10.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic11.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic12.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic13.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic14.jpg" alt="SAMPLE PHOTO"/>
-
-      <img class="works-imgs" src="./img/pic15.jpg" alt="SAMPLE PHOTO"/>
+  <div class="flex flex-wrap items-center justify-center text-3xl my-[20px]">
+    <h1>My Splash of Creativity</h1>
   </div>
-      <div>
-        <a class="bck-home-btn" href="./index.html">Home</a>
-      </div>
-  </body>
-  <script src="./script.js"></script>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+    <!-- Sample images -->
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic1.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic2.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic3.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic4.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic5.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic6.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic7.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic8.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic9.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic10.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic11.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic13.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic14.jpg" alt="Sample Photos">
+    <img class="rounded-lg max-w-full h-auto" src="./img/pic15.jpg" alt="Sample Photos">
+
+  </div>
+
+  <!-- Navigation link -->
+  <div class="flex items-center justify-center my-4">
+    <a class="flex my-4 border-2 border-black px-6 py-2 rounded bg-black hover:bg-transparent hover:text-black text-white" href="./index.html">Home</a>
+  </div>
+
+</div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.grid img', {
+    reset: true,
+    delay: 200,
+    easing: "ease-out",
+    scale: 1.2
+  });
+</script>
+
+</body>
 </html>

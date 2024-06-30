@@ -19,7 +19,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: repeating-linear-gradient(90deg, hsla(168,0%,63%,0.09) 0px, hsla(168,0%,63%,0.09) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(168,0%,63%,0.09) 0px, hsla(168,0%,63%,0.09) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(168,0%,63%,0.09) 0px, hsla(168,0%,63%,0.09) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(168,0%,63%,0.09) 0px, hsla(168,0%,63%,0.09) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
     margin:0px;
     color:white;
 }
@@ -95,12 +94,11 @@ nav a{
     letter-spacing: 1px;
 }
 nav a:hover{
-    padding: 5px;
+    padding: 2px;
     color:rgb(255, 0, 0);
     font-weight: 300;
-    font-size:larger;
-    transition: all 1s;
-    letter-spacing: 2px;
+    transition: all 0.5s;
+    letter-spacing: 1px;
 }
 /* Nav Bar Lines */
 .menu{
@@ -250,14 +248,6 @@ nav a:hover{
     gap:5px;
 }
 .about-title{
-    background-image: linear-gradient(45deg,
-    #ff0000,
-    #ff7300,
-    #ff00c8,
-    #ff0000
-    );
-    -webkit-background-clip: text;
-    color: transparent;
     letter-spacing: 2px;
     font-family: "Capriola", sans-serif;
 }
@@ -280,24 +270,7 @@ nav a:hover{
 .work-title{
     font-family: "Capriola", sans-serif;
     font-weight: 700;
-    flex-wrap: wrap;
-    display: flex;
     letter-spacing: 2px;
-    background-image: linear-gradient(15deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000,
-    #002bff,
-    #00FEFF
-    );
-    -webkit-background-clip: text;
-    color: transparent;
 }
 .work-img{
     display: flex;
@@ -313,7 +286,7 @@ nav a:hover{
     width:300px;
     height:300px;
     border:2px solid black;
-    border-radius: 50px 16px;
+    border-radius: 12px;
     box-shadow: 0px 0px 30px black;
 }
 .work-img img:hover{
@@ -324,59 +297,6 @@ nav a:hover{
 .works a{
     all:unset;
 }
-/* .work-btn{
-    cursor: pointer;
-    position: static;
-    padding: 10px 24px;
-    margin-top: 20px;
-    font-size: 18px;
-    font-family: "Bubblegum Sans", sans-serif;
-    background:transparent;
-    color:white;
-    border:2px solid white;
-    border-radius: 34px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
-    overflow: hidden;
-}
-.work-btn::before{
-    content: '';
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    width: 110px;
-    height: 50px;
-    border-radius: inherit;
-    scale: 0;
-    z-index: -1;
-    background-image: linear-gradient(45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000,
-    #002bff,
-    #00FEFF
-    );
-    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
-} 
-.work-btn:hover::before{
-    scale: 3;
-}
-.work-btn:hover{
-    color: white;
-    border:none;
-    scale: 1.1;
-    box-shadow: 0px 0px 20px white;
-}
-.work-btn:active{
-    scale: 1;
-}   */
 .work-btn{
     margin-top: 40px;
     position: relative;
@@ -447,21 +367,6 @@ nav a:hover{
     font-family: "Capriola", sans-serif;
     letter-spacing: 2px;
     font-size:40px;
-    background-image: linear-gradient(105deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #ff0000,
-    #ff0000,
-    #ff0000,
-    #ff0000,
-    #ff0000,
-    #00ffd5,
-    #7a00ff
-    );
-    -webkit-background-clip: text;
-    color: transparent;
 }
 .order-details{
     display: flex;
@@ -574,46 +479,12 @@ nav a:hover{
     box-shadow: 0px 0px 20px black;
     align-items: center;
 }
-.cont-header{
-    display: flex;
-    flex-wrap: wrap; 
-    text-align: center;
-    font-family: "Capriola", sans-serif;
-    letter-spacing:2px;
-    font-size:28px;
-    font-weight: 550;
-    background-image: linear-gradient(45deg,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000,
-    #002bff,
-    #00FEFF
-    );
-    -webkit-background-clip: text;
-    color: transparent;
-}
 .cont-bdy{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
     align-items: center;
-}
-.cont-content{
-    display: flex;
-    font-family: 'Josefin Sans', sans-serif; /*url*/
-    font-size: 100%;
-    font-weight: 550;
-    letter-spacing:1px;
-}
-.cont-logo{
-    height:100px;
-    width:100px;
-    display: flex;
-    border:2px transparent;
-    border-radius: 20px 12px;
 }
 .cont-contact{
     display: flex;
